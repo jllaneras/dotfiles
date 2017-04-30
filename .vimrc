@@ -12,6 +12,11 @@ set ruler
 " Wrap lines when they are too  long
 set wrap
 
+" Display tabs that look 4-space wide
+set tabstop=4
+" Number of spaces to use for each step of (auto)indent 
+set shiftwidth=4
+
 " Display at least 3 lines around you cursor (for scrolling)
 set scrolloff=3 
 
