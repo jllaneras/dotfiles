@@ -66,3 +66,6 @@ set antialias
 
 " Disable startup message
 set shortmess=I
+
+" Set vim color scheme
+colo delek
