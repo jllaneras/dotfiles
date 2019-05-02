@@ -1,7 +1,5 @@
 " Cancel the compatibility with Vi. 
 set nocompatible
-" Activate pathogen
-call pathogen#infect()
 
 " Update the title of your window or your terminal
 set title
