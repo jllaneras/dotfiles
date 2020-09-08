@@ -5,14 +5,16 @@ set nocompatible
 set title
 " Display line numers
 set number
-" Display cursor position
+" Show a ruler with line number, % through file on status line
 set ruler
 " Wrap lines when they are too  long
 set wrap
 
-" Display tabs that look 4-space wide
+" Insert space characters whenever the tab key is pressed
+set expandtab
+" Number of space characters to use for each tab character
 set tabstop=4
-" Number of spaces to use for each step of (auto)indent 
+" Number of spaces to use for each step of (auto)indentation 
 set shiftwidth=4
 
 " Display at least 3 lines around you cursor (for scrolling)
@@ -44,22 +46,6 @@ filetype on
 filetype plugin on
 filetype indent on
 
-if has('gui_running')
-  " Add menu bar
-  :set guioptions+=m
-  " Remove toolbar
-  :set guioptions-=T  
-  if has('gui_win32')
-    set guifont=Lucida_Console:h9:cANSI
-  else
-    set guifont=DejaVu\ Sans\ Mono\ 10
-  endif
-endif
-
-set antialias
-
 " Disable startup message
 set shortmess=I
 
-" Set vim color scheme
-colo delek
