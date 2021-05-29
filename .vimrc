@@ -1,3 +1,13 @@
+" Specify a directory for plugins
+call plug#begin('~/.vim/plugged')
+
+Plug 'morhetz/gruvbox'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+" Initialize plugin system
+call plug#end()
+
 " Cancel the compatibility with Vi. 
 set nocompatible
 
@@ -55,3 +65,8 @@ set shortmess=I
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
+
+" Apply gruvbox colorscheme in dark mode
+colorscheme gruvbox
+set background=dark
+
