@@ -5,6 +5,9 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+" Disable startup warning saying the vim 8.1 is required
+let g:coc_disable_startup_warning = 1
+
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 
