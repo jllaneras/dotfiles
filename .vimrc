@@ -30,7 +30,7 @@ set nocompatible
 " Update the title of your window or your terminal
 set title
 " Display line numers
-set relativenumber
+set number relativenumber
 " Show a ruler with line number, % through file on status line
 set ruler
 " Wrap lines when they are too  long
