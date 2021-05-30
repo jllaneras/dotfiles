@@ -12,6 +12,9 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 " Disable startup warning saying the vim 8.1 is required
 let g:coc_disable_startup_warning = 1
 
+" Set leader key to space
+let mapleader = " "
+
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 
