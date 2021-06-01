@@ -92,4 +92,5 @@ set background=dark
 " COC plugin config
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gr <Plug>(coc-references)
+nmap <leader>rr <Plug>(coc-rename)
 
