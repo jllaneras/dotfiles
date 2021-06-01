@@ -23,6 +23,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'dense-analysis/ale'
 
 " Initialize plugin system
 call plug#end()
@@ -95,4 +96,10 @@ set background=dark
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gr <Plug>(coc-references)
 nmap <leader>rr <Plug>(coc-rename)
+
+" ALE plugin config
+let g:ale_linters = {
+    \   'python': ['flake8', 'pylint'],
+    \   'javascript': ['eslint'],
+    \}
 
