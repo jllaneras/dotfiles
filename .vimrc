@@ -31,6 +31,11 @@ call plug#end()
 " Cancel the compatibility with Vi. 
 set nocompatible
 
+" The encoding displayed.
+set encoding=utf-8
+" The encoding written to file.
+set fileencoding=utf-8
+
 " Update the title of your window or your terminal
 set title
 " Display line numers
