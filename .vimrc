@@ -99,6 +99,7 @@ set background=dark
 
 " COC plugin config
 set cmdheight=2
+set updatetime=300
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gr <Plug>(coc-references)
 nmap <leader>rr <Plug>(coc-rename)
