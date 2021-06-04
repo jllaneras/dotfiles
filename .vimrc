@@ -1,33 +1,3 @@
-" Install vim-plug if not found
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-endif
-
-" Run PlugInstall if there are missing plugins
-autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
-  \| PlugInstall --sync | source $MYVIMRC
-\| endif
-
-" Disable startup warning saying the vim 8.1 is required
-let g:coc_disable_startup_warning = 1
-
-" Set leader key to space
-let mapleader = " "
-
-" Specify a directory for plugins
-call plug#begin('~/.vim/plugged')
-
-Plug 'morhetz/gruvbox'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'scrooloose/nerdtree'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'dense-analysis/ale'
-
-" Initialize plugin system
-call plug#end()
-
 " Cancel the compatibility with Vi. 
 set nocompatible
 
@@ -91,22 +61,6 @@ set shortmess=I
   set termguicolors
 endif
 
-" Apply gruvbox colorscheme in dark mode
-let g:gruvbox_contrast_dark = 'hard'
-let g:gruvbox_invert_selection = '0'
-colorscheme gruvbox
-set background=dark
-
-" COC plugin config
-set cmdheight=2
-set updatetime=300
-nmap <leader>gd <Plug>(coc-definition)
-nmap <leader>gr <Plug>(coc-references)
-nmap <leader>rr <Plug>(coc-rename)
-
-" ALE plugin config
-let g:ale_linters = {
-    \   'python': ['flake8', 'pylint'],
-    \   'javascript': ['eslint'],
-    \}
+" Plugins config
+source ~/.vim/config/vim-plug.vim
 
