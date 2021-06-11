@@ -59,10 +59,13 @@ filetype indent on
 
 " Disable startup message
 set shortmess=I
+
 " Update file if it was not modified in Vim
 set autoread
 " Enable spell check
 set spell
+" Ignore files matching these patterns when opening files with a glob pattern
+set wildignore+=.pyc,.swp
 
 " Enable true colors (for tmux)
  if exists('+termguicolors')
