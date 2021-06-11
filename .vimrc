@@ -68,6 +68,8 @@ set spell
 set wildignore+=.pyc,.swp
 " Number of commands kept in the history
 set history=9999
+" Show graphical menu for tab autocompletion in ex mode
+set wildmenu
 
 " Enable true colors (for tmux)
  if exists('+termguicolors')
