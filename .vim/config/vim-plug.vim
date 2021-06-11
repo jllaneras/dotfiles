@@ -19,6 +19,7 @@ let mapleader = " "
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
@@ -28,11 +29,14 @@ Plug 'dense-analysis/ale'
 " Initialize plugin system
 call plug#end()
 
-" Apply gruvbox colorscheme in dark mode
+" Gruvbox colorscheme
 let g:gruvbox_contrast_dark = 'hard'
 let g:gruvbox_invert_selection = '0'
-colorscheme gruvbox
-set background=dark
+" colorscheme gruvbox
+" set background=light
+
+" Onehalf colorscheme
+colorscheme onehalflight
 
 " ALE plugin config
 let g:ale_linters = {
