@@ -38,6 +38,8 @@ set smartcase
 set incsearch
 " Highlight search results
 set hlsearch
+" Show matching brackets
+set showmatch
 
 " Backspace behaves as expected
 set backspace=indent,eol,start
