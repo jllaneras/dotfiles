@@ -6,6 +6,8 @@ set encoding=utf-8
 " The encoding written to file.
 set fileencoding=utf-8
 
+" Disable startup message
+set shortmess=I
 " Update the title of your window or your terminal
 set title
 " Display line numers
@@ -57,8 +59,8 @@ filetype on
 filetype plugin on
 filetype indent on
 
-" Disable startup message
-set shortmess=I
+" Set leader key to space
+let mapleader = " "
 
 " Update file if it was not modified in Vim
 set autoread
