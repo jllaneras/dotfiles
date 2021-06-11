@@ -59,6 +59,8 @@ filetype indent on
 
 " Disable startup message
 set shortmess=I
+" Update file if it was not modified in Vim
+set autoread
 " Enable spell check
 set spell
 
