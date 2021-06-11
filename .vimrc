@@ -16,6 +16,8 @@ set ruler
 set wrap
 " Show column to signal max length line
 set cc=80
+" Highlight the current line
+set cursorline
 
 " Insert space characters whenever the tab key is pressed
 set expandtab
