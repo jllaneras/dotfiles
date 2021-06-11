@@ -66,6 +66,8 @@ set autoread
 set spell
 " Ignore files matching these patterns when opening files with a glob pattern
 set wildignore+=.pyc,.swp
+" Number of commands kept in the history
+set history=9999
 
 " Enable true colors (for tmux)
  if exists('+termguicolors')
