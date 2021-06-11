@@ -59,6 +59,8 @@ filetype indent on
 
 " Disable startup message
 set shortmess=I
+" Enable spell check
+set spell
 
 " Enable true colors (for tmux)
  if exists('+termguicolors')
