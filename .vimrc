@@ -14,6 +14,8 @@ set number relativenumber
 set ruler
 " Wrap lines when they are too  long
 set wrap
+" Show column to signal max length line
+set cc=80
 
 " Insert space characters whenever the tab key is pressed
 set expandtab
@@ -61,6 +63,6 @@ set shortmess=I
   set termguicolors
 endif
 
-" Plugins config
+" Plugin configuration
 source ~/.vim/config/vim-plug.vim
 
